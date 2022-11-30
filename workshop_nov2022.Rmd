@@ -1,0 +1,29 @@
+---
+title: "Workshop - Nov 2022"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+date: "2022-11-30"
+---
+
+```{r setup, include=FALSE}
+pacman::p_load(tinytex, bookdown, dplyr, ggplot2)
+```
+
+```{r echo=TRUE}
+data <- read.csv('https://raw.githubusercontent.com/ahurford/biol-4605-data/main/data/corn.csv', fill=TRUE)
+```
+
+```{r, fig.cap="Figure 1."}
+plot <- plot(data, 
+  main="Figure 1.")
+```
+
+
+
+
+
+
+
+
